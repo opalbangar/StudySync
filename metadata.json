@@ -1,0 +1,6 @@
+{
+  "name": "ScholarSync - AI Study & Assignment Hub",
+  "description": "Connect Canvas or Google Classroom to track assignments, prepare for tests with custom practice problems, and master challenging topics with interactive AI lessons.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

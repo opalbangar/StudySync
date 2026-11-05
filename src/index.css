@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #FAF8F5;
+    color: #2D3748;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+}
+
+@layer utilities {
+  .bg-cream-50 {
+    background-color: #FFFDF9;
+  }
+  .bg-cream-100 {
+    background-color: #FAF8F5;
+  }
+  .bg-cream-200 {
+    background-color: #F4EFEA;
+  }
+  .bg-cream-card {
+    background-color: #FFFFFF;
+  }
+  .border-cream-border {
+    border-color: #EFE9E0;
+  }
+  .border-pastel-pink {
+    border-color: #FBCFE8;
+  }
+  .border-pastel-blue {
+    border-color: #BAE6FD;
+  }
+  /* Backwards compatibility aliases to smooth transitions */
+  .bg-slate-850 {
+    background-color: #FFFFFF;
+  }
+  .bg-slate-750 {
+    background-color: #F8F5F0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.22s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Custom soft pastel scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF8F5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #E2D9CE;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #CBD5E1;
+}
